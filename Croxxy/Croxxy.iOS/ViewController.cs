@@ -21,9 +21,16 @@ namespace Croxxy.iOS
 				var title = string.Format ("{0} clicks!", count++);
 				Button.SetTitle (title, UIControlState.Normal);
 			};
+
+            SignUpBtn.TouchUpInside += delegate
+            {
+                Button.SetTitle("Demo", UIControlState.Normal);
+            };
 		}
 
-		public override void DidReceiveMemoryWarning ()
+
+
+        public override void DidReceiveMemoryWarning ()
 		{
 			base.DidReceiveMemoryWarning ();
 			// Release any cached data, images, etc that aren't in use.
